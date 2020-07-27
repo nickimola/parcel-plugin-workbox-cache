@@ -2,7 +2,8 @@ const { generateSWString } = require('workbox-build')
 const { readFile, writeFileSync } = require('fs')
 const logger = require('@parcel/logger')
 const path = require('path')
-const uglifyJS = require( 'uglify-js' )
+const uglifyJS = require('terser');
+
 const workboxConfig = require( '../../.workbox-config.js' )
 
 module.exports = bundle => {
@@ -26,9 +27,9 @@ module.exports = bundle => {
       bundle.mainBundle.childBundles.values().next().value.entryAsset
 
     pkg = typeof mainAsset.getPackage === 'function' ? await mainAsset.getPackage() : mainAsset.package
-    
+
     let config = Object.assign({}, workboxConfig ? workboxConfig : DEFAULT_CONFIG)
-    
+
     if (pkg.workbox) {
       if (pkg.workbox.importScripts && Array.isArray(pkg.workbox.importScripts)) {
         config.importScripts = pkg.workbox.importScripts
