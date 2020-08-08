@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-workbox-cache",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An updated plugin for Parcel to generate a service worker with Workbox. Accepts a .workbox-config.js file",
   "main": "index.js",
   "repository": "https://github.com/nickimola/parcel-plugin-workbox-2019",
@@ -30,6 +30,5 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
