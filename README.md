@@ -7,6 +7,8 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/nickimola/parcel-plugin-workbox-cache?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/nickimola/parcel-plugin-workbox-cache?style=flat-square)
 
+## Contributors needed - I don't have a lot of time and some help to maintain this plugin would be really appreciated
+
 An updated plugin for [Parcel][parcel url] to generate a service worker with [Workbox][workbox url], derived from Anders Dahnielson's [parcel-plugin-workbox][ppw url].
 
 ## Install
